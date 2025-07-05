@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def aboutUs(request):
     print(request)
@@ -7,3 +8,7 @@ def aboutUs(request):
 
 def aboutUsDetail(request, id):
     return HttpResponse("The id is " + str(id))
+
+
+def homePage(request):
+    return render(request, 'index.html')

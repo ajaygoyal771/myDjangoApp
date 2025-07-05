@@ -21,4 +21,5 @@ urlpatterns = [
     path('adminPanel/', admin.site.urls),
     path('aboutus/',views.aboutUs),
     path('aboutus/<id>',views.aboutUsDetail),
+    path('', views.homePage),
 ]
