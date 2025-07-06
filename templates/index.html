@@ -4,5 +4,23 @@
     </head>
     <body>
         {{string}}
+        {% for i in mmlist %}
+        <div>{{i}} {{forloop.counter}}</div>
+        {% endfor %}
+        <br/>
+        <table border='1' cellpadding='10'>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>{{details.Name}}</td>
+                <td>{{details.PhoneNumebr}}</td>
+            </tr>
+            <tr>
+                <td>{{details.Name}}</td>
+                <td>{{details.PhoneNumebr}}</td>
+            </tr>
+        </table>
     </body>
 </html>

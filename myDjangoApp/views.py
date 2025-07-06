@@ -14,7 +14,10 @@ def homePage(request):
     data = {
         'title': 'My Home page through variable.',
         'string': 'Welcome to myDjangoApp through Variable....!',
+        'mmlist': ['Ajay', 'Shubham', 'Poonam', 'Ashok'],
+        'details': {
+            'Name': 'Ajay',
+            'PhoneNumebr': '9958075990'
+        },
     }
     return render(request, 'index.html',data)
-
-
