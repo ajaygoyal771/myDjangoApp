@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render # type: ignore
 
 def aboutUs(request):
     print(request)
@@ -11,4 +11,10 @@ def aboutUsDetail(request, id):
 
 
 def homePage(request):
-    return render(request, 'index.html')
+    data = {
+        'title': 'My Home page through variable.',
+        'string': 'Welcome to myDjangoApp through Variable....!',
+    }
+    return render(request, 'index.html',data)
+
+
