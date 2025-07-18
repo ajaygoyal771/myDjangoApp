@@ -22,4 +22,5 @@ urlpatterns = [
     path('aboutus/',views.aboutUs),
     path('aboutus/<id>',views.aboutUsDetail),
     path('', views.homePage),
+    path('userForm', views.userForm),
 ]
